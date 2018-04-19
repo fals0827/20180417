@@ -24,8 +24,10 @@ public class  Circle extends Shape implements Measure{
 
     @Override
     public void show() {
+        System.out.println("圓形");
         System.out.println("半徑 r =" + getR());
         System.out.print("面積 = " ); area();
         System.out.print("周長 = " ); perimeter();
+        System.out.println("============================");
     }
 }

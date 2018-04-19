@@ -23,16 +23,21 @@ public class Rectangle extends Shape implements Measure{
 
     @Override
     public void area() {
-
+        System.out.println(weight * height);
     }
 
     @Override
     public void perimeter() {
-
+        System.out.println( (weight + height) * 2 );
     }
 
     @Override
     public void show() {
-
+        System.out.println("矩形");
+        System.out.println("寬 =  " + getWeight());
+        System.out.println("長 =  " + getHeight());
+        System.out.print("面積 =  "); area();
+        System.out.print("周長 =  "); perimeter();
+        System.out.println("============================");
     }
 }
